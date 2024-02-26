@@ -22,11 +22,11 @@ public class DBService {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-		Todo t1 = new Todo(null, "Estudar", "Programação em Java Web", sdf.parse("03/01/2024"), true);
-		Todo t2 = new Todo(null, "Ler", "Programação Full Stack em Java", sdf.parse("02/02/2024"), false);
-		Todo t3 = new Todo(null, "Jogar", "Counter-Strike Source", sdf.parse("20/01/2024"), false);
-		Todo t4 = new Todo(null, "Trabalhar", "No LeParc", sdf.parse("08/01/2024"), false);
+		Todo t1 = new Todo(null, "Estudar", "Programação em Java Web", LocalDateTime.parse("2022-08-26T11:00:38.393"), false);
+		Todo t2 = new Todo(null, "Ler", "Programação Full Stack em Java",  LocalDateTime.parse("2022-08-26T11:00:38.393"), false);
+		//Todo t3 = new Todo(null, "Jogar", "Counter-Strike Source", sdf.parse("20/01/2024"), false);
+		//Todo t4 = new Todo(null, "Trabalhar", "No LeParc", sdf.parse("08/01/2024"), false);
 
-		repository.saveAll(Arrays.asList(t1, t2, t3, t4));
+		repository.saveAll(Arrays.asList(t1,t2));
 	}
 }
